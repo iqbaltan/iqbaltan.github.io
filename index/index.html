@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Iqbal Taufiq A. N. - Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <style>
+        
+        .details-wrap{
+            position: relative;
+        }
+        .img-fluid{
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .caption-content{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #f05f40;
+        }
+
+        .caption-content h4{
+            margin-top: 120px;
+        }
+        .details-wrap:hover .img-fluid, .details-wrap:hover .title, .details-wrap:hover .date{
+            opacity: 0.3;
+        }
+        .details-wrap:hover .caption-content{
+            opacity: 0.7;
+            color: white;
+        }
+        .overlay {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            overflow-y: scroll;
+            transition: 0.5s;
+            z-index: 99;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay {overflow-y: auto;}
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">My Portfolio</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Welcome to My Portfolio's Website</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">This website containing all my web development portfolio</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Portfolio</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 text-center portfolio-item">
+                <a href="#getModal1" data-toggle="modal" class="portfolio-link" onclick="openportfolio1()" style="text-decoration:none;">
+                    <div class="details-wrap">
+                        <img class="img-fluid" src="img/MaintenancePlanning/Schedulled.png" alt="">
+                        <div class="title">BSI Maintenance Planning</div>
+                        <div class="date">2018</div>
+                        <div class="caption-content">
+                            <h4>BSI Maintenance Planning</h4>
+                            <p>Codeigniter, MS. SQL Server, Boostrap 3</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 text-center portfolio-item">
+                <a href="#getModal1" data-toggle="modal" class="portfolio-link" onclick="openportfolio2()" style="text-decoration:none;">
+                    <div class="details-wrap">
+                        <img class="img-fluid" src="img/Assessment/Admin - New Assessment.png" alt="">
+                        <div class="title">Assessment Kompetensi Tirta Investama</div>
+                        <div class="date">2018</div>
+                        <div class="caption-content">
+                            <h4>Assessment Kompetensi Tirta Investama</h4>
+                            <p>Codeigniter, MySQL, Bootstrap 3</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 text-center portfolio-item">
+                <a href="#getModal1" data-toggle="modal" class="portfolio-link" onclick="openportfolio3()" style="text-decoration:none;">
+                    <div class="details-wrap">
+                        <img class="img-fluid" src="img/Kominfo/Home2.png" alt="">
+                        <div class="title">Official Website Diskominfo Kota Kediri</div>
+                        <div class="date">2017</div>
+                        <div class="caption-content">
+                            <h4>Official Website Diskominfo Kota Kediri</h4>
+                            <p>Codeigniter, MySQL, Bootstrap 3</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">It's me!</h2>
+            <hr class="my-4">
+            <img style="width:35%; margin-top:-15px;" src="img/Untitled-1.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+            <p>0838-3357-5633</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="mailto:iqbaltaufiq.an@gmail.com">iqbaltaufiq.an@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="portfolio1" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeportfolio1()">&times;</a>
+        <div class="overlay-content">
+            <h2 class="section-heading">BSI Maintenance Planning</h2>
+            <hr class="my-4">
+            <div style="width:50%; margin:auto;">
+                <p>Web based system uses Codeigniter, Microsoft SQL Server 14, and Bootstrap 3 for planning and schedulling daily and/or monthly maintenance of all infrastructure at PT. Bumi Suksesindo.</p>
+                <img style="width:60%;" src="img/MaintenancePlanning/Login.png" alt="">
+                <p><b>Login Page</b></p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Dashboard.png" alt="">
+                <p><b>Dashboard Page</b><br>Containing information about total events outstanding this month and this year, total and list location not maintenanced, total and list devices not maintenanced, top 10 devices with less maintenanced, percentation about done, in-progress, or open schedulled maintenance in pie chart</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Schedulled.png" alt="">
+                <p><b>Schedulled Page</b><br>Feature to plan/schedule monthly maintenance</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Daily Check - Checking.png" alt="">
+                <p><b>Daily Check Page</b><br>Feature to check daily maintenance</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Master Data - Check.png" alt="">
+                <p><b>Master Data Check Page</b><br>Feature to manage check</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Master Data - Checklist.png" alt="">
+                <p><b>Master Data Checklist Page</b><br>Feature to manage checklist</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Master Data - Sync.png" alt="">
+                <p><b>Master Data Syncronize Page</b><br>Feature to syncronize location and devices from other database</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Management - User.png" alt="">
+                <p><b>Management User Page</b><br>Feature to manage user</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Management - Rule.png" alt="">
+                <p><b>Management Rule Page</b><br>Feature to manage user's rule (menu and page)</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Report - Annual Report.png" alt="">
+                <p><b>Annual Report Page</b><br>Feature to show report monthly maintenance in yearly format</p>
+                <img style="width:100%;" src="img/MaintenancePlanning/Report - Daily Report.png" alt="">
+                <p><b>Daily Report Page</b><br>Feature to show report daily maintenance</p>
+            </div>
+            <button class="btn btn-danger" onclick="closeportfolio1()" style="margin-bottom:10px;">Close &times;</button>
+        </div>
+    </div>
+
+    <div id="portfolio2" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeportfolio2()">&times;</a>
+        <div class="overlay-content">
+            <h2 class="section-heading">Assessment Kompetensi Tirta Investama</h2>
+            <hr class="my-4">
+            <div style="width:50%; margin:auto;">
+                <p>Web based system uses Codeigniter, MySQL, and Bootstrap 3 that can help PT. Tirta Investama Pandaan to assess staff (operator/technician) skills in operating all machines at PT. Tirta Investama Pandaan.</p>
+                <img style="width:100%;" src="img/Assessment/Login.png" alt="">
+                <p><b>Login Page</b></p>
+                <img style="width:100%;" src="img/Assessment/Admin - Data Karyawan.png" alt="">
+                <p><b>Data Karyawan Page</b><br>Feature to manage all staff</p>
+                <img style="width:100%;" src="img/Assessment/Admin - Add Data Karyawan.png" alt="">
+                <p><b>Add Data Karyawan Page</b><br>Feature to add new staff</p>
+                <img style="width:100%;" src="img/Assessment/Admin - Tasklist Maintenance.png" alt="">
+                <p><b>Tasklist Maintenance Page</b><br>Feature to manage tasklist grouping by machine</p>
+                <img style="width:100%;" src="img/Assessment/Admin - Add Tasklist.png" alt="">
+                <p><b>Add Tasklist Page</b><br>Feature to add tasklist</p>
+                <img style="width:100%;" src="img/Assessment/Admin - Data Assessment.png" alt="">
+                <p><b>Data Assessment Page</b><br>Feature to show all done assessment</p>
+                <img style="width:100%;" src="img/Assessment/Admin - New Assessment.png" alt="">
+                <p><b>New Assessment Page</b><br>Feature to assess staff</p>
+                <img style="width:100%;" src="img/Assessment/Admin - Rekapitulasi.png" alt="">
+                <p><b>Recapitulation Page</b><br>Feature to show recapitulate all assessment gruoping by machine</p>
+                <img style="width:100%;" src="img/Assessment/Admin - List Mesin.png" alt="">
+                <p><b>List Mesin Page</b><br>Feature to manage machine</p>
+                <img style="width:100%;" src="img/Assessment/Admin - Add Mesin.png" alt="">
+                <p><b>Add Mesin Page</b><br>Feature to add machine</p>
+            </div>
+            <button class="btn btn-danger" onclick="closeportfolio2()" style="margin-bottom:10px;">Close &times;</button>
+        </div>
+    </div>
+
+    <div id="portfolio3" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeportfolio3()">&times;</a>
+        <div class="overlay-content">
+            <h2 class="section-heading">Official Website Diskominfo Kota Kediri</h2>
+            <hr class="my-4">
+            <div style="width:50%; margin:auto;">
+                <p>Official Website uses Codeigniter and MySQL to display information (news, events, and various important documents) from Diskominfo Kota Kediri.</p>
+                <img style="width:100%;" src="img/Kominfo/Sign In.png" alt="">
+                <p><b>Login Page</b></p>
+                <img style="width:100%;" src="img/Kominfo/Home.png" alt="">
+                <p><b>Home Page</b><br>Another guest's feature can access in this followed link: <a style="color:#f05f40" target="_blank" href="http://diskominfo.kedirikota.go.id">link</a></p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Dashboard.png" alt="">
+                <p><b>Admin Dashboard Page</b><br>Containing information about total viewers of this website, user active, events, and news</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Acara.png" alt="">
+                <p><b>Admin Acara Page</b><br>Feature to manage events</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Daftar Pegawai.png" alt="">
+                <p><b>Admin Daftar Pegawai Page</b><br>Feature to manage list staff at Diskominfo Kota Kediri</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Data Aplikasi.png" alt="">
+                <p><b>Admin Data Aplikasi Page</b><br>Feature to manage application data</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Data e-Gov.png" alt="">
+                <p><b>Admin Data e-Gov Page</b><br>Feature to manage e-Gov data</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Data SOP.png" alt="">
+                <p><b>Admin Data SOP Page</b><br>Feature to manage SOP data</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Dokumen Panduan.png" alt="">
+                <p><b>Admin Dokumen Panduan Page</b><br>Feature to manage guide document data</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Galeri.png" alt="">
+                <p><b>Admin Galeri Page</b><br>Feature to manage gallery</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Message.png" alt="">
+                <p><b>Admin Message Page</b><br>Feature to manage message from registered member</p>
+                <img style="width:100%;" src="img/Kominfo/Admin - Users.png" alt="">
+                <p><b>Admin Users Page</b><br>Feature to manage all member</p>
+            </div>
+            <button class="btn btn-danger" onclick="closeportfolio3()" style="margin-bottom:10px;">Close &times;</button>
+        </div>
+    </div>
+
+    <script>
+        function openportfolio1() {
+            document.getElementById("portfolio1").style.height = "100%";
+        }
+                
+        function closeportfolio1() {
+            document.getElementById("portfolio1").style.height = "0%";
+        }
+        function openportfolio2() {
+            document.getElementById("portfolio2").style.height = "100%";
+        }
+                
+        function closeportfolio2() {
+            document.getElementById("portfolio2").style.height = "0%";
+        }
+        function openportfolio3() {
+            document.getElementById("portfolio3").style.height = "100%";
+        }
+                
+        function closeportfolio3() {
+            document.getElementById("portfolio3").style.height = "0%";
+        }
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html>
